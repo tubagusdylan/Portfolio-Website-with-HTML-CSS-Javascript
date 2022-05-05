@@ -201,7 +201,7 @@ nav {
 }
 
 .nav-logo i {
-  display: inline-block;
+  display: block;
   color: var(--first-color);
   font-size: 22px;
   float: right;

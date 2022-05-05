@@ -126,6 +126,7 @@ table {
 
 /* Import FONT */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 /* === Variable CSS === */
 :root {
@@ -137,6 +138,7 @@ table {
 
   /* Font and Typography */
   --body-font: "Lato", sans-serif;
+  --logo-font: "Courgette", cursive;
 
   /* Font Size */
   --veybig-font-size: 36px;
@@ -151,12 +153,6 @@ table {
   --font-regular: 400;
   --font-bold: 700;
   --font-black: 900;
-}
-
-/* FONT */
-@font-face {
-  font-family: Courgette;
-  src: url(Fonts/Courgette-Regular.ttf);
 }
 
 /* =============== DARK THEME ================ */
@@ -193,16 +189,18 @@ nav {
 }
 
 .nav-logo h4 {
-  font-family: "Courgette", Helvetica, sans-serif;
+  font-family: var(--logo-font);
   font-size: 22px;
   font-weight: 600;
 }
 
-.nav-logo .menu-burger {
+.nav-logo i {
+  display: inline-block;
   color: var(--first-color);
+  font-size: 22px;
 }
 
-.nav-logo .fi-rr-menu-burger:hover {
+.fi-rr-menu-burger:hover {
   cursor: pointer;
 }
 
@@ -388,11 +386,19 @@ p {
 }
 
 .projects-items img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 .projects-items-2 img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 .projects-content {
@@ -452,13 +458,14 @@ header span {
   gap: 20px;
 }
 
-.footer-links .fi {
+.footer-links .footer-contact {
+  display: inline-block;
   color: var(--first-color);
-  text-decoration: none;
+  border-bottom-style: none;
   transition: color 0.3s ease-in-out;
 }
 
-.footer-links .fi:hover {
+.footer-links .footer-contact:hover {
   color: var(--complement-color);
 }
 
